@@ -215,7 +215,7 @@ static CGFloat const XLMaxLineNumber        = 6;        // 横线最大行数
     for (NSInteger index = 0; index < itemCount; index ++) {
         CGFloat value = [self.xlDelegate chartView:self axisXAtIndex:index];
         CGFloat height = value * unitHeight;
-        
+        // 坐标转换
         CGPoint point = CGPointMake(index * datX, self.drawHeight - height);
         [self drawTimeLine:firstPoint toPoint:point];
         firstPoint = point;
