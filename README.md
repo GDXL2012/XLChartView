@@ -5,7 +5,9 @@
 - -(instancetype)initWithFrame:(CGRect)frame;
 
 调用绘制方法前，需设置xlDelegate
+
 /**
  绘制图标:
  */
+ 
 -(void)drawChartView;
