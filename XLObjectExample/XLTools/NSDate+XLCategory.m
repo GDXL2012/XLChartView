@@ -42,7 +42,7 @@
 +(NSMutableArray *)latelyDaysTimeForCount:(NSInteger)dayCount{
     NSMutableArray *eightArr = [[NSMutableArray alloc] init];
     
-    for (int i = dayCount - 1; i >= 0; i --) {
+    for (NSInteger i = dayCount - 1; i >= 0; i --) {
         //从现在开始的24小时
         NSTimeInterval secondsPerDay = -i * 24*60*60;
         NSDate *curDate = [NSDate dateWithTimeIntervalSinceNow:secondsPerDay];
